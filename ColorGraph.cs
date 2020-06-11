@@ -11,6 +11,13 @@ namespace ColorGraph
     /// </summary>
     public class ColorGraph
     {
+        /// <summary>
+        /// Число забаненных вершин
+        /// </summary>
+        public int BunnedVertexCount { get; set; }
+        /// <summary>
+        /// Запрещенные вершины (удаленные)
+        /// </summary>
         private bool[] bannedVerties;
         /// <summary>
         /// Матрица смежности
@@ -32,6 +39,7 @@ namespace ColorGraph
             VertexCount = adjacencyMatrix.GetLength(0);
             bannedVerties = new bool[VertexCount];
             IndependentSets = new List<List<int>>();
+            BunnedVertexCount = 0;
         }
         /// <summary>
         /// Возвращает список вершин, не смежных данной вершине
@@ -41,12 +49,13 @@ namespace ColorGraph
         public List<int> GetNonAdjacentPeaks(int currentVertex)
         {
             List<int> toReturn = new List<int>();
-            if (currentVertex < 1 || currentVertex >= VertexCount)
+            if (currentVertex < 0 || currentVertex >= VertexCount || bannedVerties[currentVertex])
             {
                 toReturn = null;
             }
             else
             {
+                toReturn.Add(currentVertex);
                 for (int i = 0; i < VertexCount; i++)
                 {
                     if (!bannedVerties[i])
@@ -183,6 +192,7 @@ namespace ColorGraph
             {
                 bannedVerties[veretexsToDelete[i]] = true;
             }
+            BunnedVertexCount += veretexsToDelete.Count;
         }
     }
 }

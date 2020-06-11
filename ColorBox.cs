@@ -74,6 +74,21 @@ namespace ColorGraph
         {
             ColorIndex = colorIndex;
             CountOfCans = countOfCans;
+            UsedCans = 0;
+            NotUsedCans = CountOfCans;
+            isUsed = false;
         }
+        /// <summary>
+        /// Сколько банок использовано
+        /// </summary>
+        public int UsedCans { get; set; }
+        /// <summary>
+        /// Сколько банок не использовано
+        /// </summary>
+        public int NotUsedCans { get; set; }
+        /// <summary>
+        /// Был ли данный цвет уже использован
+        /// </summary>
+        public bool isUsed { get; set; }
     }
 }

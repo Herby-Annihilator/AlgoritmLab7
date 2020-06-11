@@ -1,0 +1,5 @@
+D:\Проекты  в студии\ColorGraph\bin\Debug\ColorGraph.dll
+D:\Проекты  в студии\ColorGraph\bin\Debug\ColorGraph.pdb
+D:\Проекты  в студии\ColorGraph\obj\Debug\ColorGraph.csprojAssemblyReference.cache
+D:\Проекты  в студии\ColorGraph\obj\Debug\ColorGraph.dll
+D:\Проекты  в студии\ColorGraph\obj\Debug\ColorGraph.pdb
