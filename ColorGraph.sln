@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorGraph", "ColorGraph.csproj", "{D8EA2E58-F237-4064-BA55-5E6C539B38E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "..\Demo\Demo.csproj", "{FCA2B2D8-4DFD-40BF-A899-3F2E1CB1D0EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8EA2E58-F237-4064-BA55-5E6C539B38E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EA2E58-F237-4064-BA55-5E6C539B38E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8EA2E58-F237-4064-BA55-5E6C539B38E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EA2E58-F237-4064-BA55-5E6C539B38E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA2B2D8-4DFD-40BF-A899-3F2E1CB1D0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA2B2D8-4DFD-40BF-A899-3F2E1CB1D0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA2B2D8-4DFD-40BF-A899-3F2E1CB1D0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA2B2D8-4DFD-40BF-A899-3F2E1CB1D0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA8A211B-0197-4A16-9745-922AC9B2C4FE}
+	EndGlobalSection
+EndGlobal
