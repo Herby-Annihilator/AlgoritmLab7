@@ -94,32 +94,33 @@ namespace ColorGraph
                 //
                 // нужно выбрать следующую вершину для сравнения
                 //
-                for (int j = 0; j < visited.Length; j++)
+                bool isVisited;
+                for (int j = 0; j < list.Count; j++)
                 {
-                    bool chosen = false;
-                    for (int d = 0; d < list.Count; d++)
+                    isVisited = false;
+                    for (int g = 0; g < visited.Length; g++)
                     {
-                        // если вершина еще не была посещена
-                        if (list[d] != visited[j])
+                        if (list[j] == visited[g])
                         {
-                            // ее нужно занести в массив посещенных вершин
-                            for (int g = 0; g < visited.Length; g++)
-                            {
-                                if (visited[g] == -1)
-                                {
-                                    visited[g] = list[d];
-                                    k = list[d];
-                                    break;
-                                }
-                            }
-                            chosen = true;
+                            isVisited = true;
+                            break;
                         }
                     }
-                    if (chosen)
+                    if (!isVisited)
                     {
+                        // ее нужно занести в массив посещенных вершин
+                        for (int g = 0; g < visited.Length; g++)
+                        {
+                            if (visited[g] == -1)
+                            {
+                                visited[g] = list[j];
+                                k = list[j];
+                                break;
+                            }
+                        }
                         break;
                     }
-                }
+                }                
             }
             return list;
         }
